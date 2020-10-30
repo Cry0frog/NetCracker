@@ -2,6 +2,7 @@ package person;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Objects;
 
 
 public class Person {
@@ -11,6 +12,44 @@ public class Person {
     private char sex;
     private int passport;
     private int age = Period.between(birthday, LocalDate.now()).getYears();
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", birthday=" + birthday +
+                ", sex=" + sex +
+                ", passport=" + passport +
+                ", age=" + age +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Person)) return false;
+        Person person = (Person) o;
+        return getId() == person.getId() &&
+                getSex() == person.getSex() &&
+                getPassport() == person.getPassport() &&
+                getAge() == person.getAge() &&
+                Objects.equals(getName(), person.getName()) &&
+                Objects.equals(getBirthday(), person.getBirthday());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getName(), getBirthday(), getSex(), getPassport(), getAge());
+    }
+
+    public Person(int id, String name, LocalDate birthday, char sex, int passport) {
+        this.id = id;
+        this.name = name;
+        this.birthday = birthday;
+        this.sex = sex;
+        this.passport = passport;
+    }
 
     public int getId() {
         return id;
