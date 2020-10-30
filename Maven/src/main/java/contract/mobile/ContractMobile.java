@@ -1,33 +1,45 @@
 package contract.mobile;
 
 import contract.Contract;
+import org.joda.time.LocalDate;
 import person.Person;
 
-import java.time.LocalDate;
+
 import java.util.Objects;
 
+/**
+ * Класс контракт для мобильной связи, наследуется от класса Contract и интерфейса IContract
+ * Имеет уникальное свойство minute, gigabyte и sms
+ * @author Валуйских Никита
+ * @version 1.0
+ */
 public class ContractMobile extends Contract {
 
+    /** Поле минуты */
     private int minute;
+
+    /** Поле gigabyte */
     private int gigabyte;
+
+    /** Поле смс */
     private int sms;
 
     @Override
     public String toString() {
         return "ContractMobile{" +
-                "minute=" + minute +
-                ", gigabyte=" + gigabyte +
-                ", sms=" + sms +
-                ", id=" + id +
+                "id=" + id +
                 ", dateStart=" + dateStart +
                 ", dateFinish=" + dateFinish +
                 ", numberContract=" + numberContract +
+                ", minute=" + minute +
+                ", gigabyte=" + gigabyte +
+                ", sms=" + sms +
                 ", person=" + person +
                 '}';
     }
 
-    public  ContractMobile(int id, LocalDate dateStart, LocalDate dateFinish, int numberContract, Person person, int minute, int gigabyte, int sms){
-        this.id = id;
+    public  ContractMobile(LocalDate dateStart, LocalDate dateFinish, int numberContract, Person person, int minute, int gigabyte, int sms){
+        this.id = globalContractId;
         this.dateStart = dateStart;
         this.dateFinish = dateFinish;
         this.numberContract = numberContract;
@@ -35,6 +47,7 @@ public class ContractMobile extends Contract {
         this.minute = minute;
         this.gigabyte = gigabyte;
         this.sms = sms;
+        globalContractId++;
     }
 
     @Override
@@ -45,7 +58,6 @@ public class ContractMobile extends Contract {
         return getMinute() == that.getMinute() &&
                 getGigabyte() == that.getGigabyte() &&
                 getSms() == that.getSms() &&
-                getId() == that.getId() &&
                 getNumberContract() == that.getNumberContract() &&
                 Objects.equals(getDateStart(), that.getDateStart()) &&
                 Objects.equals(getDateFinish(), that.getDateFinish()) &&

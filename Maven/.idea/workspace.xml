@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="477f3f50-92e7-4250-bc13-f905d8883e61" name="Default Changelist" comment="" />
+    <list default="true" id="477f3f50-92e7-4250-bc13-f905d8883e61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contract/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contract/icontract/IContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/icontract/IContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contract/internet/ContractInternet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/internet/ContractInternet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contract/mobile/ContractMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/mobile/ContractMobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contract/tv/ContractTV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/tv/ContractTV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/person/Person.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +55,26 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="Maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -66,25 +97,57 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="0" y="90" width="1089" height="774" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824@0.40.1536.824" timestamp="1604056667511" />
-    <state x="434" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1604061651463">
+    <state x="434" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1604075113110">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="434" y="224" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824@0.40.1536.824" timestamp="1604061651463" />
+    <state x="434" y="224" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824@0.40.1536.824" timestamp="1604075113110" />
     <state x="540" y="306" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604056099859">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="540" y="306" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.40.1536.824@0.40.1536.824" timestamp="1604056099859" />
-    <state x="471" y="190" key="FileChooserDialogImpl" timestamp="1604060392177">
+    <state x="471" y="190" key="FileChooserDialogImpl" timestamp="1604066732500">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="471" y="190" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1604060392177" />
+    <state x="471" y="190" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1604066732500" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1604075454561">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1604075454561" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1604075454561">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1604075454561" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1604075454561">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1604075454561" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1604075454561">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1604075454561" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1604075194907">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1604075194907" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1604075194907">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1604075194907" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1604075194907">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1604075194907" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1604075194907">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1604075194907" />
     <state x="200" y="78" key="SettingsEditor" timestamp="1604060401524">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="200" y="78" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1604060401524" />
-    <state x="555" y="394" key="com.intellij.ide.util.TipDialog" timestamp="1604056645191">
+    <state x="555" y="394" key="com.intellij.ide.util.TipDialog" timestamp="1604066760711">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="555" y="394" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1604056645191" />
+    <state x="555" y="394" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1604066760711" />
   </component>
 </project>

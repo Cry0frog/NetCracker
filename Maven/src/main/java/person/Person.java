@@ -1,17 +1,30 @@
 package person;
 
-import java.time.LocalDate;
-import java.time.Period;
+
+import org.joda.time.LocalDate;
+import org.joda.time.Years;
+
 import java.util.Objects;
 
-
+/**
+ * Класс персона со свойствами globalPersonId, id, name, birthday, sex, passport и age
+ * @author Валуйских Никита
+ * @version 1.0
+ */
 public class Person {
+    private static int globalPersonId = 0;
     private int id;
     private String name;
     private LocalDate birthday;
     private char sex;
     private int passport;
-    private int age = Period.between(birthday, LocalDate.now()).getYears();
+    private int age;
+
+    public int calculateAge(LocalDate birthDate, LocalDate currentDate) {
+        if(birthDate == null)return 0;
+        Years age = Years.yearsBetween(birthDate, currentDate);
+        return age.getYears();
+    }
 
     @Override
     public String toString() {
@@ -43,12 +56,14 @@ public class Person {
         return Objects.hash(getId(), getName(), getBirthday(), getSex(), getPassport(), getAge());
     }
 
-    public Person(int id, String name, LocalDate birthday, char sex, int passport) {
-        this.id = id;
+    public Person(String name, LocalDate birthday, char sex, int passport) {
+        this.id = globalPersonId;
         this.name = name;
         this.birthday = birthday;
         this.sex = sex;
         this.passport = passport;
+        this.age = calculateAge(birthday, new LocalDate());
+        globalPersonId++;
     }
 
     public int getId() {

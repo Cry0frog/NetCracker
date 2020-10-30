@@ -1,32 +1,42 @@
 package contract.tv;
 
 import contract.Contract;
+import org.joda.time.LocalDate;
 import person.Person;
 
-import java.time.LocalDate;
+
 import java.util.Objects;
 
+
+/**
+ * Класс контракт для цифрового телевидения, наследуется от класса Contract и интерфейса IContract
+ * Имеет уникальное свойство pack
+ * @author Валуйских Никита
+ * @version 1.0
+ */
 public class ContractTV extends Contract {
 
+    /** Поле пакет подключения */
     private String pack;
 
-    public ContractTV(int id, LocalDate dateStart, LocalDate dateFinish, int numberContract, Person person, String pack){
-        this.id = id;
+    public ContractTV(LocalDate dateStart, LocalDate dateFinish, int numberContract, Person person, String pack){
+        this.id = globalContractId;
         this.dateStart = dateStart;
         this.dateFinish = dateFinish;
         this.numberContract = numberContract;
         this.person = person;
         this.pack = pack;
+        globalContractId++;
     }
 
     @Override
     public String toString() {
         return "ContractTV{" +
-                "pack='" + pack + '\'' +
-                ", id=" + id +
+                "id=" + id +
                 ", dateStart=" + dateStart +
                 ", dateFinish=" + dateFinish +
                 ", numberContract=" + numberContract +
+                ", pack='" + pack + '\'' +
                 ", person=" + person +
                 '}';
     }
@@ -36,8 +46,7 @@ public class ContractTV extends Contract {
         if (this == o) return true;
         if (!(o instanceof ContractTV)) return false;
         ContractTV that = (ContractTV) o;
-        return getId() == that.getId() &&
-                getNumberContract() == that.getNumberContract() &&
+        return  getNumberContract() == that.getNumberContract() &&
                 Objects.equals(getPack(), that.getPack()) &&
                 Objects.equals(getDateStart(), that.getDateStart()) &&
                 Objects.equals(getDateFinish(), that.getDateFinish()) &&

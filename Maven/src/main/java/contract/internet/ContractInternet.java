@@ -1,33 +1,41 @@
 package contract.internet;
 
 import contract.Contract;
+import org.joda.time.LocalDate;
 import person.Person;
 
-import java.time.LocalDate;
+
 import java.util.Objects;
 
-
+/**
+ * Класс контракт для интернет соеденения, наследуется от класса Contract и интерфейса IContract
+ * Имеет уникальное свойство speed
+ * @author Валуйских Никита
+ * @version 1.0
+ */
 public class ContractInternet extends Contract {
 
+    /** Поле скорость интернета, измеряется в Mbps */
     private int speed;
 
-    public ContractInternet(int id, LocalDate dateStart, LocalDate dateFinish, int numberContract, Person person, int speed) {
-        this.id = id;
+    public ContractInternet(LocalDate dateStart, LocalDate dateFinish, int numberContract, Person person, int speed) {
+        this.id = globalContractId;
         this.dateStart = dateStart;
         this.dateFinish = dateFinish;
         this.numberContract = numberContract;
         this.person = person;
         this.speed = speed;
+        globalContractId++;
     }
 
     @Override
     public String toString() {
         return "ContractInternet{" +
-                "speed=" + speed +
-                ", id=" + id +
+                "id=" + id +
                 ", dateStart=" + dateStart +
                 ", dateFinish=" + dateFinish +
                 ", numberContract=" + numberContract +
+                ", speed=" + speed +
                 ", person=" + person +
                 '}';
     }
@@ -38,7 +46,6 @@ public class ContractInternet extends Contract {
         if (!(o instanceof ContractInternet)) return false;
         ContractInternet that = (ContractInternet) o;
         return getSpeed() == that.getSpeed() &&
-                getId() == that.getId() &&
                 getNumberContract() == that.getNumberContract() &&
                 Objects.equals(getDateStart(), that.getDateStart()) &&
                 Objects.equals(getDateFinish(), that.getDateFinish()) &&
