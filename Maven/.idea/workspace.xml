@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="477f3f50-92e7-4250-bc13-f905d8883e61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/contract/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/Contract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/contract/icontract/IContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/icontract/IContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/contract/internet/ContractInternet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/internet/ContractInternet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/contract/mobile/ContractMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/mobile/ContractMobile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/contract/tv/ContractTV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/tv/ContractTV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/person/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,38 +100,38 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="471" y="190" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1604066732500" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1604075454561">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1604078271817">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1604075454561" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1604075454561">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1604078271817" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1604078271816">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1604075454561" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1604075454561">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1604078271816" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1604078271816">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1604075454561" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1604075454561">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1604078271816" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1604078271816">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1604075454561" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1604075194907">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1604078271816" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1604078271817">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1604075194907" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1604075194907">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1604078271817" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1604078271817">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1604075194907" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1604075194907">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1604078271817" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1604078271817">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1604075194907" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1604075194907">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1604078271817" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1604078271817">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1604075194907" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1604078271817" />
     <state x="200" y="78" key="SettingsEditor" timestamp="1604060401524">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
