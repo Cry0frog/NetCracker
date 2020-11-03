@@ -37,9 +37,6 @@ public class Repository {
         }
         if(!check)
         {
-            if(contract.getId()<numberContract){
-                contract.setId(numberContract);
-            }
             if (numberContract == contracts.length) {
                 Contract[] contracts1 = contracts;
                 contracts = new Contract[numberContract + 5];
@@ -80,8 +77,8 @@ public class Repository {
                 contracts[j] = null;
                 if(contracts[j+1] != null){
                     for(int i = j; i < numberContract - 1; i++){
-                        contracts[i+1].setId(i);
                         contracts[i] = contracts[i+1];
+                        contracts[i+1] = null;
                     }
                 }
                 numberContract--;
