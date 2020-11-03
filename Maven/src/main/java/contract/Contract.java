@@ -6,22 +6,22 @@ import person.Person;
 
 
 /**
- * Класс контракт со свойствами globalContractId, id, dateStart, dateFinish, numberContract и person
- * Класс наследует методы из интерфейса IContract
- * @author Валуйских Никита
+ * Class contract with properties globalContractId, id, dateStart, dateFinish, numberContract and person
+ * The class inherits methods from the IContract interface
+ * @author Valuyskikh Nikita
  * @version 1.0
  */
 public abstract class Contract implements IContract {
-    /** Поле подсчета всех контрактов */
+    /** Field counting for all contracts */
     protected static int globalContractId = 0;
-    /** Поле уникального индификатора */
+    /** Unique identifier field */
     protected int id;
-    /** Поле начало действия контракта */
+    /** Contract start field */
     protected LocalDate dateStart;
-    /** Поле завершения действия контракта */
+    /** Contract expiration field */
     protected LocalDate dateFinish;
-    /** Поле номер контракта */
+    /** Field contract number */
     protected int numberContract;
-    /** Поле персона */
+    /** Persona field */
     protected Person person;
 }

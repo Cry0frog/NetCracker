@@ -1,6 +1,7 @@
 package contract.mobile;
 
 import contract.Contract;
+import contract.icontract.IContract;
 import org.joda.time.LocalDate;
 import person.Person;
 
@@ -8,20 +9,20 @@ import person.Person;
 import java.util.Objects;
 
 /**
- * Класс контракт для мобильной связи, наследуется от класса Contract и интерфейса IContract
- * Имеет уникальное свойство minute, gigabyte и sms
- * @author Валуйских Никита
+ * The contract class for mobile communication, inherits from the Contract class and the IContract interface
+ * Has unique property minute, gigabyte and sms
+ * @author Valuyskikh Nikita
  * @version 1.0
  */
 public class ContractMobile extends Contract {
 
-    /** Поле минуты */
+    /** Minute field */
     private int minute;
 
-    /** Поле gigabyte */
+    /** gigabyte field */
     private int gigabyte;
 
-    /** Поле смс */
+    /** SMS field */
     private int sms;
 
     @Override
@@ -69,75 +70,129 @@ public class ContractMobile extends Contract {
         return Objects.hash(getMinute(), getGigabyte(), getSms(), getId(), getDateStart(), getDateFinish(), getNumberContract(), getPerson());
     }
 
+    /**
+     * Method returns minute
+     * @return minute
+     * */
     public int getMinute() {
         return minute;
     }
 
+    /**
+     * Method sets minute
+     * @param minute minutes
+     * */
     public void setMinute(int minute) {
         this.minute = minute;
     }
 
+    /**
+     * Method returns gigabyte
+     * @return gigabyte
+     * */
     public int getGigabyte() {
         return gigabyte;
     }
 
+    /**
+     * Method installs gigabyte
+     * @param gigabyte gigabytes
+     * */
     public void setGigabyte(int gigabyte) {
         this.gigabyte = gigabyte;
     }
 
+    /**
+     * Method returns sms
+     * @return sms
+     * */
     public int getSms() {
         return sms;
     }
 
+    /**
+     * Method sets sms
+     * @param sms sms
+     * */
     public void setSms(int sms) {
         this.sms = sms;
     }
 
+    /**
+     * @see IContract#getId()
+     * */
     @Override
     public int getId() {
         return this.id;
     }
 
+    /**
+     * @see IContract#setId(int)
+     * */
     @Override
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * @see IContract#getDateStart()
+     * */
     @Override
     public LocalDate getDateStart() {
         return this.dateStart;
     }
 
+    /**
+     * @see IContract#setDateStart(LocalDate)
+     * */
     @Override
     public void setDateStart(LocalDate dateStart) {
         this.dateStart = dateStart;
     }
 
+    /**
+     * @see IContract#getDateFinish()
+     * */
     @Override
     public LocalDate getDateFinish() {
         return null;
     }
 
+    /**
+     * @see IContract#setDateFinish(LocalDate)
+     * */
     @Override
     public void setDateFinish(LocalDate dateFinish) {
         this.dateFinish = dateFinish;
     }
 
+    /**
+     * @see IContract#getNumberContract()
+     * */
     @Override
     public int getNumberContract() {
         return this.numberContract;
     }
 
+    /**
+     * @see IContract#setNumberContract(int)
+     * */
     @Override
     public void setNumberContract(int numberContract) {
         this.numberContract = numberContract;
     }
 
+    /**
+     * @see IContract#getPerson()
+     * */
     @Override
     public Person getPerson() {
         return this.person;
     }
 
+    /**
+     * @see IContract#setPerson(Person)
+     * */
     @Override
     public void setPerson(Person person) {
         this.person = person;

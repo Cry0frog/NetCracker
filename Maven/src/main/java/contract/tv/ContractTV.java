@@ -1,6 +1,7 @@
 package contract.tv;
 
 import contract.Contract;
+import contract.icontract.IContract;
 import org.joda.time.LocalDate;
 import person.Person;
 
@@ -9,14 +10,14 @@ import java.util.Objects;
 
 
 /**
- * Класс контракт для цифрового телевидения, наследуется от класса Contract и интерфейса IContract
- * Имеет уникальное свойство pack
- * @author Валуйских Никита
+ * The contract class for digital television, inherits from the Contract class and the IContract interface
+ * Has a unique property pack
+ * @author Valuyskikh Nikita
  * @version 1.0
  */
 public class ContractTV extends Contract {
 
-    /** Поле пакет подключения */
+    /** Field connection package */
     private String pack;
 
     public ContractTV(LocalDate dateStart, LocalDate dateFinish, int numberContract, Person person, String pack){
@@ -58,59 +59,97 @@ public class ContractTV extends Contract {
         return Objects.hash(getPack(), getId(), getDateStart(), getDateFinish(), getNumberContract(), getPerson());
     }
 
+    /**
+     * The method returns pack
+     * @return pack package name
+     * */
     public String getPack() {
         return pack;
     }
 
+    /**
+     * Method sets pack
+     * @param pack package name
+     * */
     public void setPack(String pack) {
         this.pack = pack;
     }
 
+    /**
+     * @see IContract#getId()
+     * */
     @Override
     public int getId() {
         return this.id;
     }
 
+    /**
+     * @see IContract#setId(int)
+     * */
     @Override
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * @see IContract#getDateStart()
+     * */
     @Override
     public LocalDate getDateStart() {
         return this.dateStart;
     }
 
+    /**
+     * @see IContract#setDateStart(LocalDate)
+     * */
     @Override
     public void setDateStart(LocalDate dateStart) {
         this.dateStart = dateStart;
     }
 
+    /**
+     * @see IContract#getDateFinish()
+     * */
     @Override
     public LocalDate getDateFinish() {
         return null;
     }
 
+    /**
+     * @see IContract#setDateFinish(LocalDate)
+     * */
     @Override
     public void setDateFinish(LocalDate dateFinish) {
         this.dateFinish = dateFinish;
     }
 
+    /**
+     * @see IContract#getNumberContract()
+     * */
     @Override
     public int getNumberContract() {
         return this.numberContract;
     }
 
+    /**
+     * @see IContract#setNumberContract(int)
+     * */
     @Override
     public void setNumberContract(int numberContract) {
         this.numberContract = numberContract;
     }
 
+    /**
+     * @see IContract#getPerson()
+     * */
     @Override
     public Person getPerson() {
         return this.person;
     }
 
+    /**
+     * @see IContract#setPerson(Person)
+     * */
     @Override
     public void setPerson(Person person) {
         this.person = person;
