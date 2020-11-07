@@ -1,6 +1,9 @@
 package repository;
 
 import contract.Contract;
+import search.isearch.ISearch;
+
+import java.util.Comparator;
 
 /**
  * The repository class is analogous to an array
@@ -13,7 +16,7 @@ public class Repository {
     private Contract[] contracts = new Contract[10];
 
     /** Number of contracts added */
-    private static int numberContract = 0;
+    private int numberContract = 0;
 
     /** The method returns the size of the array
      * @return size
@@ -85,6 +88,24 @@ public class Repository {
                 break;
             }
         }
+    }
 
+    public void search(ISearch<? super Contract> c){
+        for (int i = 0; i < numberContract; i++) {
+            if (c.search(contracts[i])) System.out.println(contracts[i]);
+        }
+    }
+
+    public void sort(Comparator<? super Contract> c){
+        Contract contractBuble;
+        for (int i = 0; i < numberContract-1; i++) {
+            for (int j = 1; j < numberContract; j++) {
+                if (c.compare(contracts[i], contracts[j]) > 0) {
+                    contractBuble = contracts[i];
+                    contracts[i] = contracts[j];
+                    contracts[j] = contractBuble;
+                }
+            }
+        }
     }
 }
