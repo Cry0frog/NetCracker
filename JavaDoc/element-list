@@ -6,3 +6,9 @@ contract.tv
 main
 person
 repository
+search.isearch
+search.searchdatebefore
+search.searchdatefrom
+search.searchname
+sort.sortdatestart
+sort.sortidcontract

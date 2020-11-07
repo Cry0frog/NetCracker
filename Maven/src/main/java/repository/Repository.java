@@ -90,12 +90,20 @@ public class Repository {
         }
     }
 
+    /**
+     * The method searches for specific criteria
+     * @param c child class of the ISearch interface
+     */
     public void search(ISearch<? super Contract> c){
         for (int i = 0; i < numberContract; i++) {
             if (c.search(contracts[i])) System.out.println(contracts[i]);
         }
     }
 
+    /**
+     * The method sorts according to certain criteria
+     * @param c child class of the Comparator interface
+     */
     public void sort(Comparator<? super Contract> c){
         Contract contractBuble;
         for (int i = 0; i < numberContract-1; i++) {
