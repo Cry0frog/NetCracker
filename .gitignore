@@ -1,2 +1,3 @@
-target/
+Maven/target/classes/
+Maven/target/
 test1.txt
