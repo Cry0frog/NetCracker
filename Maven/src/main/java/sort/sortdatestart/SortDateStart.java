@@ -1,15 +1,14 @@
 package sort.sortdatestart;
 
 import contract.Contract;
-
-import java.util.Comparator;
+import sort.isorter.ISort;
 
 /**
- * Sorting class for comparing two Contract objects, inherits from the Comparator interface.
+ * Sorting class for comparing two Contract objects, inherits from the ISort interface.
  * @author Valuyskikh Nikita
  * @version 1.0
  */
-public class SortDateStart implements Comparator<Contract> {
+public class SortDateStart implements ISort<Contract> {
 
     /**
      * The method compares the start date of two Contract

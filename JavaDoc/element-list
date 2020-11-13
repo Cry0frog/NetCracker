@@ -10,5 +10,6 @@ search.isearch
 search.searchdatebefore
 search.searchdatefrom
 search.searchname
+sort.isorter
 sort.sortdatestart
 sort.sortidcontract

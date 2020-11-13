@@ -1,15 +1,14 @@
 package sort.sortidcontract;
 
 import contract.Contract;
-
-import java.util.Comparator;
+import sort.isorter.ISort;
 
 /**
- * Sorting class for comparing two Contract objects, inherits from the Comparator interface.
+ * Sorting class for comparing two Contract objects, inherits from the ISort interface.
  * @author Valuyskikh Nikita
  * @version 1.0
  */
-public class SortIdContract implements Comparator<Contract> {
+public class SortIdContract implements ISort<Contract> {
 
     /**
      * The method compares the unique identifier of two Contract

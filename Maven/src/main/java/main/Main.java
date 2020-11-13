@@ -50,8 +50,9 @@ public class Main {
         
         SearchDataFrom searchDataFrom = new SearchDataFrom(new LocalDate(2020,1,1));
 
-        repository.search(searchDataFrom);
+        Repository repository1 = repository.search(searchDataFrom);
 
+        repository1.view();
         System.out.println("---------------------------------------------------------");
 
         SortIdContract sortIdContract = new SortIdContract();
@@ -59,7 +60,7 @@ public class Main {
 
         repository.sort(sortDateStart);
 
-        //здесь стоит точка чтобы посмотреть массив repository с помощью консоли
+        repository.view();
         System.out.println("---------------------------------------------------------");
     }
 }

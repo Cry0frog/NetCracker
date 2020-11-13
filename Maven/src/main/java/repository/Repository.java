@@ -2,8 +2,7 @@ package repository;
 
 import contract.Contract;
 import search.isearch.ISearch;
-
-import java.util.Comparator;
+import sort.isorter.ISort;
 
 /**
  * The repository class is analogous to an array
@@ -93,27 +92,39 @@ public class Repository {
     /**
      * The method searches for specific criteria
      * @param c child class of the ISearch interface
+     * @return Repository
      */
-    public void search(ISearch<? super Contract> c){
+    public Repository search(ISearch<? super Contract> c){
+        Repository repository = new Repository();
         for (int i = 0; i < numberContract; i++) {
-            if (c.search(contracts[i])) System.out.println(contracts[i]);
+            if (c.search(contracts[i])) repository.add(contracts[i]);
         }
+        return repository;
     }
 
     /**
      * The method sorts according to certain criteria
      * @param c child class of the Comparator interface
      */
-    public void sort(Comparator<? super Contract> c){
-        Contract contractBuble;
+    public void sort(ISort<? super Contract> c){
+        Contract contractBubble;
         for (int i = 0; i < numberContract-1; i++) {
             for (int j = 1; j < numberContract; j++) {
                 if (c.compare(contracts[i], contracts[j]) > 0) {
-                    contractBuble = contracts[i];
+                    contractBubble = contracts[i];
                     contracts[i] = contracts[j];
-                    contracts[j] = contractBuble;
+                    contracts[j] = contractBubble;
                 }
             }
+        }
+    }
+
+    /**
+     * The method allows you to view the entire array
+     */
+    public void view(){
+        for(int i = 0; i < numberContract; i++){
+            System.out.println(contracts[i]);
         }
     }
 }
