@@ -4,12 +4,16 @@ import contract.Contract;
 import contract.internet.ContractInternet;
 import contract.mobile.ContractMobile;
 import contract.tv.ContractTV;
+import csvreader.CSVReader;
 import person.Person;
 import repository.Repository;
 import org.joda.time.LocalDate;
 import search.searchdatefrom.SearchDataFrom;
 import sort.sortdatestart.SortDateStart;
 import sort.sortidcontract.SortIdContract;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 
 
 public class Main {
@@ -47,7 +51,7 @@ public class Main {
         }
 
         System.out.println("---------------------------------------------------------");
-        
+
         SearchDataFrom searchDataFrom = new SearchDataFrom(new LocalDate(2020,1,1));
 
         Repository repository1 = repository.search(searchDataFrom);
@@ -59,6 +63,16 @@ public class Main {
         SortDateStart sortDateStart = new SortDateStart();
 
         repository.sort(sortDateStart);
+
+        repository.view();
+        System.out.println("---------------------------------------------------------");
+
+        CSVReader csvReader;
+        try {
+            csvReader = new CSVReader(repository,new FileReader("Repository.csv"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         repository.view();
         System.out.println("---------------------------------------------------------");
