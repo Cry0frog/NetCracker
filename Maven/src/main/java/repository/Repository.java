@@ -9,13 +9,15 @@ import sort.isorter.ISort;
  * @author Valuyskikh Nikita
  * @version 1.1
  */
-public class Repository {
+public class Repository  {
 
     /** Field array of contracts */
     private Contract[] contracts = new Contract[10];
 
     /** Number of contracts added */
     private int numberContract = 0;
+
+    ISort iSort;
 
     /** The method returns the size of the array
      * @return size
@@ -104,19 +106,11 @@ public class Repository {
 
     /**
      * The method sorts according to certain criteria
-     * @param c child class of the Comparator interface
+     * @param c child class of the ISort interface
      */
-    public void sort(ISort<? super Contract> c){
-        Contract contractBubble;
-        for (int i = 0; i < numberContract-1; i++) {
-            for (int j = 1; j < numberContract; j++) {
-                if (c.compare(contracts[i], contracts[j]) > 0) {
-                    contractBubble = contracts[i];
-                    contracts[i] = contracts[j];
-                    contracts[j] = contractBubble;
-                }
-            }
-        }
+    public void sort(ISort c){
+        iSort = c;
+        iSort.sort(contracts);
     }
 
     /**
@@ -126,5 +120,15 @@ public class Repository {
         for(int i = 0; i < numberContract; i++){
             System.out.println(contracts[i]);
         }
+    }
+
+    //Реализация foreach
+
+    /**
+     * The method allows you to use forEach
+     * @return array Contract
+     */
+    public Contract[] forEach(){
+        return contracts;
     }
 }

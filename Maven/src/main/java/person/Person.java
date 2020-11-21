@@ -61,12 +61,18 @@ public class Person {
         if (this == o) return true;
         if (!(o instanceof Person)) return false;
         Person person = (Person) o;
-        return getId() == person.getId() &&
-                getSex() == person.getSex() &&
+        return  getSex() == person.getSex() &&
                 getPassport() == person.getPassport() &&
                 getAge() == person.getAge() &&
                 Objects.equals(getName(), person.getName()) &&
                 Objects.equals(getBirthday(), person.getBirthday());
+    }
+
+    public boolean equals(String name, LocalDate birthday, char sex, int passport) {
+        return  getSex() == sex &&
+                getPassport() == passport &&
+                Objects.equals(getName(), name) &&
+                Objects.equals(getBirthday(), birthday);
     }
 
     @Override

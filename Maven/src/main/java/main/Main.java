@@ -62,7 +62,7 @@ public class Main {
         SortIdContract sortIdContract = new SortIdContract();
         SortDateStart sortDateStart = new SortDateStart();
 
-        repository.sort(sortDateStart);
+        repository.sort(sortIdContract);
 
         repository.view();
         System.out.println("---------------------------------------------------------");

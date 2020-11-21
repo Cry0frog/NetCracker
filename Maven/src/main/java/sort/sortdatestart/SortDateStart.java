@@ -8,7 +8,7 @@ import sort.isorter.ISort;
  * @author Valuyskikh Nikita
  * @version 1.0
  */
-public class SortDateStart implements ISort<Contract> {
+public class SortDateStart implements ISort {
 
     /**
      * The method compares the start date of two Contract
@@ -20,4 +20,23 @@ public class SortDateStart implements ISort<Contract> {
     public int compare(Contract o1, Contract o2) {
         return o1.getDateStart().compareTo(o2.getDateStart());
     }
+
+    /**
+     * The method sorts the Contract array with a bubble
+     * @param contracts
+     */
+    @Override
+    public void sort(Contract[] contracts) {
+        Contract contractBubble;
+        for (int i = 0; contracts[i] != null; i++) {
+            for (int j = 1+i; contracts[j] != null; j++) {
+                if (compare(contracts[i], contracts[j]) > 0) {
+                    contractBubble = contracts[i];
+                    contracts[i] = contracts[j];
+                    contracts[j] = contractBubble;
+                }
+            }
+        }
+    }
+
 }

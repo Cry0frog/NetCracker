@@ -40,7 +40,7 @@ public class CSVReader {
     }
 
     /**
-     * The method reads the csv file and writes the data to the Reposity
+     * The method reads the csv file and writes the data to the Repository
      * @throws IOException
      */
     private void run() throws IOException {
@@ -72,7 +72,7 @@ public class CSVReader {
             //Здесь берется последние пять цифр из паспорта как номер контракта
             int numberContract = passport%100000;
 
-            person = new Person(lineArray[3],new LocalDate(yearBirthday,monthBirthday,dayBirthday),lineArray[4].charAt(0),passport);
+            person = checkPerson(lineArray[3],new LocalDate(yearBirthday,monthBirthday,dayBirthday),lineArray[4].charAt(0),passport);
 
             switch (lineArray[0]){
                 case "internet":
@@ -96,5 +96,21 @@ public class CSVReader {
 
         //закрываем наш ридер
         reader.close();
+    }
+
+    /**
+     * The method checks for the existence of identical Person
+     * @param name name Person
+     * @param birthday birthday Person
+     * @param sex sex Person
+     * @param passport passport Person
+     * @return Person class
+     */
+    private Person checkPerson(String name, LocalDate birthday, char sex, int passport){
+        for(Contract contract:repository.forEach()){
+            if(contract != null)
+                if(contract.getPerson().equals(name, birthday, sex, passport))return contract.getPerson();
+        }
+        return new Person(name, birthday, sex, passport);
     }
 }

@@ -1,11 +1,14 @@
 package sort.isorter;
 
+import contract.Contract;
+
+
 /**
  * Sort interface, has one comparison method
  * @author Valuyskikh Nikita
  * @version 1.0
  */
-public interface ISort<T> {
+public interface ISort {
 
     /**
      * The method compares two Contract
@@ -13,5 +16,11 @@ public interface ISort<T> {
      * @param o2
      * @return int value
      */
-    int compare(T o1, T o2);
+    int compare(Contract o1, Contract o2);
+
+    /**
+     * The method sort array Contract
+     * @param contracts
+     */
+    void sort(Contract[] contracts);
 }
