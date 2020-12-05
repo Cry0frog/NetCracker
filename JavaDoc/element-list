@@ -14,3 +14,10 @@ search.searchname
 sort.isorter
 sort.sortdatestart
 sort.sortidcontract
+validators.addinformvalidator
+validators.agevalidator
+validators.datevalidator
+validators.ivalidator
+validators.message
+validators.message.status
+validators.namevalidator

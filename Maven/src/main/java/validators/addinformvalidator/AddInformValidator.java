@@ -8,14 +8,25 @@ import validators.ivalidator.IValidator;
 import validators.message.Message;
 import validators.message.status.Status;
 
+/**
+ * AddInformValidator class, has validation for additional parameters.
+ * @author Valuyskikh Nikita
+ * @version 1.0
+ */
 public class AddInformValidator implements IValidator {
 
+    /**
+     * Field Contract
+     */
     private Contract contract;
 
     public AddInformValidator(Contract contract) {
         this.contract = contract;
     }
 
+    /**
+     * @see IValidator#status()
+     */
     @Override
     public Message status() {
         Message message = null;

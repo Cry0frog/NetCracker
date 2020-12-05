@@ -34,7 +34,7 @@ public class CSVReader {
     Contract contract;
     /** repository person */
     Person person;
-
+    /** field ArrayList */
     public static ArrayList<Message[]> messagesReport = new ArrayList<>();
 
     public CSVReader(Repository repository, FileReader fileReader) {

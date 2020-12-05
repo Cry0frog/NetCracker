@@ -2,14 +2,25 @@ package validators.message;
 
 import validators.message.status.Status;
 
+/**
+ * Message class, contains validation status and message.
+ * @author Valuyskikh Nikita
+ * @version 1.0
+ */
 public class Message {
 
+    /**
+     * Field message
+     */
     private String message;
 
     public Message(Status status) {
         this.status = status;
     }
 
+    /**
+     * Field status
+     */
     private Status status;
 
     @Override

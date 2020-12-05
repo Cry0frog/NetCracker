@@ -5,14 +5,25 @@ import validators.ivalidator.IValidator;
 import validators.message.Message;
 import validators.message.status.Status;
 
+/**
+ * NameValidator class, has name validation.
+ * @author Valuyskikh Nikita
+ * @version 1.0
+ */
 public class NameValidator implements IValidator {
 
+    /**
+     * Field Contract
+     */
     private Contract contract;
 
     public NameValidator(Contract contract) {
         this.contract = contract;
     }
 
+    /**
+     * @see IValidator#status()
+     */
     @Override
     public Message status() {
         Message message;

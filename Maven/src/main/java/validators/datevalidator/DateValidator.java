@@ -5,14 +5,25 @@ import validators.ivalidator.IValidator;
 import validators.message.Message;
 import validators.message.status.Status;
 
+/**
+ * DateValidator class, has date validation.
+ * @author Valuyskikh Nikita
+ * @version 1.0
+ */
 public class DateValidator implements IValidator {
 
+    /**
+     * Field Contract
+     */
     private Contract contract;
 
     public DateValidator(Contract contract) {
         this.contract = contract;
     }
 
+    /**
+     * @see IValidator#status()
+     */
     @Override
     public Message status() {
         Message message;
