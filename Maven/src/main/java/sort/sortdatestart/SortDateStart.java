@@ -23,7 +23,7 @@ public class SortDateStart implements ISort {
 
     /**
      * The method sorts the Contract array with a bubble
-     * @param contracts
+     * @param contracts array Contract
      */
     @Override
     public void sort(Contract[] contracts) {

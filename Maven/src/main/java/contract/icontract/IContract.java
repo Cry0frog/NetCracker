@@ -11,7 +11,7 @@ import person.Person;
  */
 public interface IContract {
 
-    /** Method returns id field
+    /** Method returns id field.
      * @return id unique identifier
      * */
     int getId();

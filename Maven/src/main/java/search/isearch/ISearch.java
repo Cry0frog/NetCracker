@@ -1,7 +1,15 @@
 package search.isearch;
 
-public interface ISearch<T> {
+import contract.Contract;
 
-    boolean search(T o);
+@FunctionalInterface
+public interface ISearch {
+
+    /**
+     *
+     * @param o
+     * @return
+     */
+    boolean search(Contract o);
 
 }

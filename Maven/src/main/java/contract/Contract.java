@@ -6,8 +6,8 @@ import person.Person;
 
 
 /**
- * Class contract with properties globalContractId, id, dateStart, dateFinish, numberContract and person
- * The class inherits methods from the IContract interface
+ * Class contract with properties globalContractId, id, dateStart, dateFinish, numberContract and person.
+ * The class inherits methods from the IContract interface.
  * @author Valuyskikh Nikita
  * @version 1.0
  */

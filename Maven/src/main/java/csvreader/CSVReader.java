@@ -7,10 +7,17 @@ import contract.tv.ContractTV;
 import org.joda.time.LocalDate;
 import person.Person;
 import repository.Repository;
+import validators.addinformvalidator.AddInformValidator;
+import validators.agevalidator.AgeValidator;
+import validators.datevalidator.DateValidator;
+import validators.message.Message;
+import validators.message.status.Status;
+import validators.namevalidator.NameValidator;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * The CSVReader class is designed to read the csv file and enter it into the Repository
@@ -28,6 +35,8 @@ public class CSVReader {
     /** repository person */
     Person person;
 
+    public static ArrayList<Message[]> messagesReport = new ArrayList<>();
+
     public CSVReader(Repository repository, FileReader fileReader) {
         this.repository = repository;
         this.fileReader = fileReader;
@@ -41,7 +50,7 @@ public class CSVReader {
 
     /**
      * The method reads the csv file and writes the data to the Repository
-     * @throws IOException
+     * @throws IOException exception open file
      */
     private void run() throws IOException {
         BufferedReader reader = new BufferedReader(fileReader);
@@ -51,7 +60,7 @@ public class CSVReader {
 
             String[] lineArray = line.split(",");
             //если в стоке не хватает данных то она пропускается
-            if(lineArray.length != 8 )continue;
+            if(lineArray.length != 8 ){continue;}
 
             String[] lineDateStart = lineArray[1].split("\\.");
             int yearStart = Integer.parseInt(lineDateStart[2]);
@@ -70,28 +79,34 @@ public class CSVReader {
 
             int passport = Integer.parseInt(lineArray[6]);
             //Здесь берется последние пять цифр из паспорта как номер контракта
-            int numberContract = passport%100000;
+            int numberContract = passport % 100000;
 
-            person = checkPerson(lineArray[3],new LocalDate(yearBirthday,monthBirthday,dayBirthday),lineArray[4].charAt(0),passport);
+            person = checkPerson(lineArray[3],
+                                 new LocalDate(yearBirthday, monthBirthday, dayBirthday),
+                                 lineArray[4].charAt(0),
+                                 passport);
 
-            switch (lineArray[0]){
+            switch (lineArray[0]) {
                 case "internet":
                     int speed = Integer.parseInt(lineArray[7]);
-                    contract = new ContractInternet(new LocalDate(yearStart,monthStart,dayStart),new LocalDate(yearFinish,monthFinish,dayFinish),numberContract,person,speed);
+                    contract = new ContractInternet(new LocalDate(yearStart, monthStart, dayStart), new LocalDate(yearFinish, monthFinish, dayFinish), numberContract, person, speed);
                     break;
                 case "mobile":
                     String[] lineInformation = lineArray[7].split(";");
                     int minute = Integer.parseInt(lineInformation[0]);
                     int gigabyte = Integer.parseInt(lineInformation[1]);
                     int sms = Integer.parseInt(lineInformation[2]);
-                    contract = new ContractMobile(new LocalDate(yearStart,monthStart,dayStart),new LocalDate(yearFinish,monthFinish,dayFinish),numberContract,person,minute,gigabyte,sms);
+                    contract = new ContractMobile(new LocalDate(yearStart, monthStart, dayStart), new LocalDate(yearFinish, monthFinish, dayFinish), numberContract, person, minute, gigabyte, sms);
                     break;
                 case "tv":
-                    contract = new ContractTV(new LocalDate(yearStart,monthStart,dayStart),new LocalDate(yearFinish,monthFinish,dayFinish),numberContract,person,lineArray[7]);
+                    contract = new ContractTV(new LocalDate(yearStart, monthStart, dayStart), new LocalDate(yearFinish, monthFinish, dayFinish), numberContract, person, lineArray[7]);
                     break;
             }
 
-            repository.add(contract);
+            int length = lineArray.length + 3;
+            if (validation(contract,length)) {
+                repository.add(contract);
+            }
         }
 
         //закрываем наш ридер
@@ -106,11 +121,32 @@ public class CSVReader {
      * @param passport passport Person
      * @return Person class
      */
-    private Person checkPerson(String name, LocalDate birthday, char sex, int passport){
+    private Person checkPerson(String name, LocalDate birthday, char sex, int passport) {
         for(Contract contract:repository.forEach()){
             if(contract != null)
-                if(contract.getPerson().equals(name, birthday, sex, passport))return contract.getPerson();
+            {
+                if(contract.getPerson().equals(name, birthday, sex, passport)) { return contract.getPerson(); }
+            }
         }
         return new Person(name, birthday, sex, passport);
+    }
+
+    /**
+     * Method for validating Contracts and recording validation statistics.
+     * @param contract Contract value
+     * @param length int value
+     * @return boolean value
+     */
+    private boolean validation(Contract contract, int length){
+        Message[] messages = new Message[length];
+        messages[0] = new AddInformValidator(contract).status();
+        messages[1] = new AgeValidator(contract).status();
+        messages[2] = new DateValidator(contract).status();
+        messages[3] = new NameValidator(contract).status();
+        messagesReport.add(messages);
+        return  messages[0].getStatus().equals(Status.OK)
+                && messages[1].getStatus().equals(Status.OK)
+                && messages[2].getStatus().equals(Status.OK)
+                && messages[3].getStatus().equals(Status.OK);
     }
 }

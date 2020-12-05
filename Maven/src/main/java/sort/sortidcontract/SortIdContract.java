@@ -23,7 +23,7 @@ public class SortIdContract implements ISort {
 
     /**
      * The method sorts the Contract array using inserts
-     * @param contracts
+     * @param contracts array Contract
      */
     @Override
     public void sort(Contract[] contracts) {

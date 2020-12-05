@@ -4,7 +4,7 @@ import contract.Contract;
 import org.joda.time.LocalDate;
 import search.isearch.ISearch;
 
-public class SearchDataFrom implements ISearch<Contract> {
+public class SearchDataFrom implements ISearch {
 
     LocalDate dataFrom;
 

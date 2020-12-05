@@ -1,25 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="477f3f50-92e7-4250-bc13-f905d8883e61" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/Repository.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csvreader/CSVReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/validators/addinformvalidator/AddInformValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/validators/agevalidator/AgeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/validators/datevalidator/DateValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/validators/ivalidator/IValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/validators/message/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/validators/message/status/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/validators/namevalidator/NameValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/google_checks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sun_checks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/csvreader/CSVReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/person/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/repository/RepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/Contract.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/Contract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/icontract/IContract.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/icontract/IContract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/icontract/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/icontract/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/icontract/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/icontract/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/internet/ContractInternet.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/internet/ContractInternet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/internet/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/internet/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/internet/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/internet/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/mobile/ContractMobile.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/mobile/ContractMobile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/mobile/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/mobile/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/mobile/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/mobile/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/tv/ContractTV.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/tv/ContractTV.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/tv/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/tv/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/contract/tv/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/contract/tv/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/csvreader/CSVReader.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/csvreader/CSVReader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/csvreader/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/csvreader/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/csvreader/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/csvreader/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/main/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/main/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/main/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/main/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/main/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/main/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/member-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/package-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/person/Person.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/person/Person.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/person/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/person/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/person/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/person/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/repository/Repository.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/repository/Repository.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/repository/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/repository/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/repository/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/repository/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/isearch/ISearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/isearch/ISearch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/isearch/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/isearch/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/isearch/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/isearch/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/searchdatebefore/SearchDateBefore.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/searchdatebefore/SearchDateBefore.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/searchdatebefore/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/searchdatebefore/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/searchdatebefore/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/searchdatebefore/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/searchdatefrom/SearchDataFrom.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/searchdatefrom/SearchDataFrom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/searchdatefrom/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/searchdatefrom/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/searchdatefrom/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/searchdatefrom/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/searchname/SearchName.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/searchname/SearchName.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/searchname/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/searchname/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/search/searchname/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/search/searchname/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/sort/isorter/ISort.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/sort/isorter/ISort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/sort/isorter/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/sort/isorter/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/sort/isorter/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/sort/isorter/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/sort/sortdatestart/SortDateStart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/sort/sortdatestart/SortDateStart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/sort/sortdatestart/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/sort/sortdatestart/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/sort/sortdatestart/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/sort/sortdatestart/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/sort/sortidcontract/SortIdContract.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/sort/sortidcontract/SortIdContract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/sort/sortidcontract/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/sort/sortidcontract/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/sort/sortidcontract/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/sort/sortidcontract/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaDoc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaDoc/type-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/src/main/java/search/isearch/ISearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/search/searchdatebefore/SearchDateBefore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/search/searchdatefrom/SearchDataFrom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/search/searchname/SearchName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sort/sortdatestart/SortDateStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sort/sortidcontract/SortIdContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untiled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contract/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contract/icontract/IContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/icontract/IContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contract/internet/ContractInternet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/internet/ContractInternet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contract/mobile/ContractMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/mobile/ContractMobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contract/tv/ContractTV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contract/tv/ContractTV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csvreader/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csvreader/CSVReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/person/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/Repository.class" afterDir="false" />
->>>>>>> parent of 95a335e... #task 2 - complete
+      <change beforePath="$PROJECT_DIR$/src/main/java/search/isearch/ISearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/search/isearch/ISearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/search/searchdatebefore/SearchDateBefore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/search/searchdatebefore/SearchDateBefore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/search/searchdatefrom/SearchDataFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/search/searchdatefrom/SearchDataFrom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/search/searchname/SearchName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/search/searchname/SearchName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/isorter/ISort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/isorter/ISort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/sortdatestart/SortDateStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/sortdatestart/SortDateStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/sortidcontract/SortIdContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/sortidcontract/SortIdContract.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +128,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -43,7 +138,7 @@
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -56,23 +151,40 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSV/TSV/PSV" />
-=======
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="D:/progect/java/kyrs 3/laba" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
->>>>>>> parent of 95a335e... #task 2 - complete
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.14941406" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="groovy.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\regis\OneDrive\Документы\GitHub\NetCracker\Maven\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="csvreader" />
+      <recent name="repository" />
+      <recent name="person" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
-      <module name="Maven" />
+      <module name="Untiled" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -83,12 +195,87 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Untiled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="person.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="person" />
+      <option name="MAIN_CLASS_NAME" value="person.PersonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Untiled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repository" />
+      <option name="MAIN_CLASS_NAME" value="repository.RepositoryTest" />
+      <option name="METHOD_NAME" value="remove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Untiled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repository" />
+      <option name="MAIN_CLASS_NAME" value="repository.RepositoryTest" />
+      <option name="METHOD_NAME" value="search" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.sort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Untiled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repository" />
+      <option name="MAIN_CLASS_NAME" value="repository.RepositoryTest" />
+      <option name="METHOD_NAME" value="sort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.RepositoryTest.remove" />
+      <item itemvalue="JUnit.RepositoryTest.search" />
+      <item itemvalue="JUnit.RepositoryTest.sort" />
+      <item itemvalue="JUnit.PersonTest" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PersonTest" />
+        <item itemvalue="JUnit.RepositoryTest.sort" />
+        <item itemvalue="JUnit.RepositoryTest.search" />
+        <item itemvalue="JUnit.RepositoryTest.remove" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -101,135 +288,5 @@
       <updated>1604052634693</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="930" y="319" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1604752271828">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="930" y="319" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.1536.824@0.40.1536.824" timestamp="1604752271828" />
-    <state x="0" y="90" width="1089" height="774" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604056667511">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="0" y="90" width="1089" height="774" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824@0.40.1536.824" timestamp="1604056667511" />
-    <state x="434" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1605531359242">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="434" y="224" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824@0.40.1536.824" timestamp="1605531359242" />
-    <state x="540" y="306" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604056099859">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="540" y="306" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.40.1536.824@0.40.1536.824" timestamp="1604056099859" />
-    <state x="566" y="312" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604678589969">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="566" y="312" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.40.1536.824@0.40.1536.824" timestamp="1604678589969" />
-    <state x="273" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604752242328">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="273" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.40.1536.824@0.40.1536.824" timestamp="1604752242328" />
-<<<<<<< HEAD
-    <state x="539" y="164" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1605535214235">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="539" y="164" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.40.1536.824@0.40.1536.824" timestamp="1605535214235" />
-    <state x="93" y="133" width="1350" height="638" key="DiffContextDialog" timestamp="1605361478030">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="93" y="133" width="1350" height="638" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1605361478030" />
-    <state x="471" y="190" key="FileChooserDialogImpl" timestamp="1605016727605">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="471" y="190" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1605016727605" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1605535300187">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1605535300187" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1605535300187">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1605535300187" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1605535300187">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1605535300187" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1605535300187">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1605535300187" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1605535300188">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1605535300188" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1605535300187">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1605535300187" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1605535300187">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1605535300187" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1605535300187">
-=======
-    <state x="539" y="164" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604402372137">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="539" y="164" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.40.1536.824@0.40.1536.824" timestamp="1604402372137" />
-    <state x="471" y="190" key="FileChooserDialogImpl" timestamp="1604678387720">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="471" y="190" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1604678387720" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1604756545789">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1604756545789" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1604756545789">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1604756545789" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1604756545789">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1604756545788" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1604756545789">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1604756545789" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1604756492986">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1604756492986" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1604756492986">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1604756492986" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1604756492986">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1604756492986" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1604756492986">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1604756492986" />
-    <state x="200" y="78" key="SettingsEditor" timestamp="1604060401524">
->>>>>>> parent of 95a335e... #task 2 - complete
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1605535300187" />
-    <state x="349" y="187" key="IDE.errors.dialog" timestamp="1605361685649">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="349" y="187" key="IDE.errors.dialog/0.40.1536.824@0.40.1536.824" timestamp="1605361685649" />
-    <state x="28" y="110" key="SettingsEditor" timestamp="1605362171237">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="28" y="110" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1605362171237" />
-    <state x="555" y="394" key="com.intellij.ide.util.TipDialog" timestamp="1605361121971">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="555" y="394" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1605361121971" />
-    <state x="209" y="148" key="new project wizard" timestamp="1604157633223">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="209" y="148" key="new project wizard/0.40.1536.824@0.40.1536.824" timestamp="1604157633223" />
   </component>
 </project>

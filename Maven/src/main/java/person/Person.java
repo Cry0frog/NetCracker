@@ -21,16 +21,16 @@ public class Person {
     /** Last name, first name, patronymic field */
     private String name;
 
-    /** Birthday box */
+    /** Birthday box. */
     private LocalDate birthday;
 
-    /** Field sex */
+    /** Field sex. */
     private char sex;
 
-    /** Folder data field */
+    /** Folder data field. */
     private int passport;
 
-    /** Field age */
+    /** Field age. */
     private int age;
 
     /** The method calculates age based on date of birth
@@ -38,22 +38,30 @@ public class Person {
      * @param currentDate date of the current day
      * @return age
      * */
-    public int calculateAge(LocalDate birthDate, LocalDate currentDate) {
+    public int calculateAge(final LocalDate birthDate, final LocalDate currentDate) {
         if(birthDate == null)return 0;
         Years age = Years.yearsBetween(birthDate, currentDate);
         return age.getYears();
     }
 
+
     @Override
     public String toString() {
-        return "Person{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", birthday=" + birthday +
-                ", sex=" + sex +
-                ", passport=" + passport +
-                ", age=" + age +
-                '}';
+        return "Person{"
+                + "id="
+                + id
+                + ", name='"
+                + name
+                + '\''
+                + ", birthday="
+                + birthday
+                + ", sex="
+                + sex
+                + ", passport="
+                + passport
+                + ", age="
+                + age
+                + '}';
     }
 
     @Override
@@ -63,21 +71,20 @@ public class Person {
         Person person = (Person) o;
         return  getSex() == person.getSex() &&
                 getPassport() == person.getPassport() &&
-                getAge() == person.getAge() &&
                 Objects.equals(getName(), person.getName()) &&
                 Objects.equals(getBirthday(), person.getBirthday());
     }
 
-    public boolean equals(String name, LocalDate birthday, char sex, int passport) {
-        return  getSex() == sex &&
-                getPassport() == passport &&
-                Objects.equals(getName(), name) &&
-                Objects.equals(getBirthday(), birthday);
+    public boolean equals(final String name, final LocalDate birthday, final char sex, final int passport) {
+        return  getSex() == sex
+                && getPassport() == passport
+                && Objects.equals(getName(), name)
+                && Objects.equals(getBirthday(), birthday);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getName(), getBirthday(), getSex(), getPassport(), getAge());
+        return Objects.hash(getName(), getBirthday(), getSex(), getPassport());
     }
 
     public Person(String name, LocalDate birthday, char sex, int passport) {
@@ -90,28 +97,28 @@ public class Person {
         globalPersonId++;
     }
 
-    /** Method returns id field
+    /** Method returns id field.
      * @return id - unique identifier
      * */
     public int getId() {
         return id;
     }
 
-    /** Method sets the id field
+    /** Method sets the id field.
      * @param id unique identifier
      * */
     public void setId(int id) {
         this.id = id;
     }
 
-    /** The method returns name
+    /** The method returns name.
      * @return name
      * */
     public String getName() {
         return name;
     }
 
-    /** Method sets the name
+    /** Method sets the name.
      * @param name name
      * */
     public void setName(String name) {

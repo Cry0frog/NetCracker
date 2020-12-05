@@ -3,7 +3,7 @@ package search.searchname;
 import contract.Contract;
 import search.isearch.ISearch;
 
-public class SearchName implements ISearch<Contract> {
+public class SearchName implements ISearch {
 
     String name;
 

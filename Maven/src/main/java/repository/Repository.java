@@ -4,19 +4,22 @@ import contract.Contract;
 import search.isearch.ISearch;
 import sort.isorter.ISort;
 
+import java.util.Arrays;
+
 /**
- * The repository class is analogous to an array
+ * The repository class is analogous to an array.
  * @author Valuyskikh Nikita
  * @version 1.1
  */
 public class Repository  {
 
-    /** Field array of contracts */
+    /** Field array of contracts. */
     private Contract[] contracts = new Contract[10];
 
-    /** Number of contracts added */
+    /** Number of contracts added. */
     private int numberContract = 0;
 
+    /** Field ISort interface. */
     ISort iSort;
 
     /** The method returns the size of the array
@@ -24,6 +27,19 @@ public class Repository  {
      * */
     public int size(){
        return numberContract;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Repository)) return false;
+        Repository that = (Repository) o;
+        return Arrays.equals(contracts, that.forEach());
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(contracts);
     }
 
     /** The method adds a new Contract to the array
@@ -96,7 +112,7 @@ public class Repository  {
      * @param c child class of the ISearch interface
      * @return Repository
      */
-    public Repository search(ISearch<? super Contract> c){
+    public Repository search(ISearch c){
         Repository repository = new Repository();
         for (int i = 0; i < numberContract; i++) {
             if (c.search(contracts[i])) repository.add(contracts[i]);
@@ -125,10 +141,18 @@ public class Repository  {
     //Реализация foreach
 
     /**
-     * The method allows you to use forEach
+     * The method allows you to use forEach.
      * @return array Contract
      */
-    public Contract[] forEach(){
-        return contracts;
+    public Contract[] forEach() {
+        if (numberContract>0) {
+            Contract[] contractEach = new Contract[numberContract];
+            for(int i = 0; i < numberContract; i++){
+                contractEach[i] = contracts[i];
+            }
+            return contractEach;
+        }
+        else { return null; }
+
     }
 }

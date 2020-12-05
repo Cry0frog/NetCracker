@@ -56,7 +56,7 @@ public class ContractTV extends Contract {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getPack(), getId(), getDateStart(), getDateFinish(), getNumberContract(), getPerson());
+        return Objects.hash(getPack(), getDateStart(), getDateFinish(), getNumberContract(), getPerson());
     }
 
     /**
@@ -112,7 +112,7 @@ public class ContractTV extends Contract {
      * */
     @Override
     public LocalDate getDateFinish() {
-        return null;
+        return this.dateFinish;
     }
 
     /**

@@ -4,10 +4,17 @@ import contract.Contract;
 import org.joda.time.LocalDate;
 import search.isearch.ISearch;
 
-public class SearchDateBefore implements ISearch<Contract> {
+public class SearchDateBefore implements ISearch {
 
+    /**
+     * Field LocalDate.
+     */
     LocalDate dataBefore;
 
+    /**
+     * The method compares the having object with the incoming one.
+     * @param dataBefore LocalDate
+     */
     public SearchDateBefore(LocalDate dataBefore) {
         this.dataBefore = dataBefore;
     }

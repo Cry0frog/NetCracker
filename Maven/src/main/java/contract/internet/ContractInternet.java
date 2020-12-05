@@ -56,7 +56,7 @@ public class ContractInternet extends Contract {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getSpeed(), getId(), getDateStart(), getDateFinish(), getNumberContract(), getPerson());
+        return Objects.hash(getSpeed(), getDateStart(), getDateFinish(), getNumberContract(), getPerson());
     }
 
     /** The method returns the speed field
@@ -110,7 +110,7 @@ public class ContractInternet extends Contract {
      * */
     @Override
     public LocalDate getDateFinish() {
-        return null;
+        return this.dateFinish;
     }
 
     /**
