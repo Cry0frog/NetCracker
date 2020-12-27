@@ -6,9 +6,9 @@ import contract.Contract;
 public interface ISearch {
 
     /**
-     *
-     * @param o
-     * @return
+     * Method compares two objects.
+     * @param o Contract value
+     * @return boolean value
      */
     boolean search(Contract o);
 

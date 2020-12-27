@@ -10,10 +10,12 @@ import repository.Repository;
 import validators.addinformvalidator.AddInformValidator;
 import validators.agevalidator.AgeValidator;
 import validators.datevalidator.DateValidator;
+import validators.ivalidator.IValidator;
 import validators.message.Message;
 import validators.message.status.Status;
 import validators.namevalidator.NameValidator;
 
+import javax.xml.validation.Validator;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -34,8 +36,16 @@ public class CSVReader {
     Contract contract;
     /** repository person */
     Person person;
+
     /** field ArrayList */
-    public static ArrayList<Message[]> messagesReport = new ArrayList<>();
+    public static ArrayList<IValidator> validatorsArr = new ArrayList<>();
+
+    static  {
+        validatorsArr.add(new AddInformValidator());
+        validatorsArr.add(new AgeValidator());
+        validatorsArr.add(new DateValidator());
+        validatorsArr.add(new NameValidator());
+    }
 
     public CSVReader(Repository repository, FileReader fileReader) {
         this.repository = repository;
@@ -102,9 +112,7 @@ public class CSVReader {
                     contract = new ContractTV(new LocalDate(yearStart, monthStart, dayStart), new LocalDate(yearFinish, monthFinish, dayFinish), numberContract, person, lineArray[7]);
                     break;
             }
-
-            int length = lineArray.length + 3;
-            if (validation(contract,length)) {
+            if (validation(contract)) {
                 repository.add(contract);
             }
         }
@@ -134,19 +142,15 @@ public class CSVReader {
     /**
      * Method for validating Contracts and recording validation statistics.
      * @param contract Contract value
-     * @param length int value
      * @return boolean value
      */
-    private boolean validation(Contract contract, int length){
-        Message[] messages = new Message[length];
-        messages[0] = new AddInformValidator(contract).status();
-        messages[1] = new AgeValidator(contract).status();
-        messages[2] = new DateValidator(contract).status();
-        messages[3] = new NameValidator(contract).status();
-        messagesReport.add(messages);
-        return  messages[0].getStatus().equals(Status.OK)
-                && messages[1].getStatus().equals(Status.OK)
-                && messages[2].getStatus().equals(Status.OK)
-                && messages[3].getStatus().equals(Status.OK);
+    private boolean validation(Contract contract){
+        boolean check = true;
+        for (int i = 0; i < validatorsArr.size(); i++){
+            validatorsArr.get(i).setContract(contract);
+            IValidator validator = validatorsArr.get(i);
+            if(!(validator.status().getStatus().equals(Status.OK)))check = false;
+        }
+        return  check;
     }
 }

@@ -21,6 +21,10 @@ public class NameValidator implements IValidator {
         this.contract = contract;
     }
 
+    public NameValidator(){
+
+    }
+
     /**
      * @see IValidator#status()
      */
@@ -34,5 +38,15 @@ public class NameValidator implements IValidator {
             message = new Message(Status.OK);
         }
         return message;
+    }
+
+    @Override
+    public Contract getContract() {
+        return contract;
+    }
+
+    @Override
+    public void setContract(Contract contract) {
+        this.contract = contract;
     }
 }

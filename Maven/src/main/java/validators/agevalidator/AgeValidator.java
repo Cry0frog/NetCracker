@@ -21,6 +21,10 @@ public class AgeValidator implements IValidator {
         this.contract = contract;
     }
 
+    public AgeValidator(){
+
+    }
+
     /**
      * @see IValidator#status()
      */
@@ -33,5 +37,15 @@ public class AgeValidator implements IValidator {
             message = new Message(Status.WARNING, "Age: Customer under 18");
         }
         return message;
+    }
+
+    @Override
+    public Contract getContract() {
+        return contract;
+    }
+
+    @Override
+    public void setContract(Contract contract) {
+        this.contract = contract;
     }
 }

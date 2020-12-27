@@ -24,6 +24,10 @@ public class AddInformValidator implements IValidator {
         this.contract = contract;
     }
 
+    public AddInformValidator() {
+
+    }
+
     /**
      * @see IValidator#status()
      */
@@ -50,5 +54,15 @@ public class AddInformValidator implements IValidator {
             }
         }
         return message;
+    }
+
+    @Override
+    public Contract getContract() {
+        return contract;
+    }
+
+    @Override
+    public void setContract(Contract contract) {
+        this.contract = contract;
     }
 }

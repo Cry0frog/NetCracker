@@ -21,6 +21,10 @@ public class DateValidator implements IValidator {
         this.contract = contract;
     }
 
+    public DateValidator(){
+
+    }
+
     /**
      * @see IValidator#status()
      */
@@ -35,4 +39,13 @@ public class DateValidator implements IValidator {
         return message;
     }
 
+    @Override
+    public Contract getContract() {
+        return contract;
+    }
+
+    @Override
+    public void setContract(Contract contract) {
+        this.contract = contract;
+    }
 }

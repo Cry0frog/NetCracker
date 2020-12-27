@@ -28,7 +28,7 @@ public class SortDateStart implements ISort {
     @Override
     public void sort(Contract[] contracts) {
         Contract contractBubble;
-        for (int i = 0; contracts[i] != null; i++) {
+        for (int i = 0;contracts[i] != null ; i++) {
             for (int j = 1+i; contracts[j] != null; j++) {
                 if (compare(contracts[i], contracts[j]) > 0) {
                     contractBubble = contracts[i];

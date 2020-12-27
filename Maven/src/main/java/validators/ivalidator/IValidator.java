@@ -1,5 +1,6 @@
 package validators.ivalidator;
 
+import contract.Contract;
 import validators.message.Message;
 
 /**
@@ -14,5 +15,7 @@ public interface IValidator {
      * @return Message value
      */
     Message status();
+    Contract getContract();
+    void setContract(Contract contract);
 
 }
