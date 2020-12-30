@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="477f3f50-92e7-4250-bc13-f905d8883e61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/sort/sortdatestart/SortDateStartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/annotation/configuration/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/annotation/injectable/AutoInjectable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/injector/Injector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/csvreader/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csvreader/CSVReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/search/isearch/ISearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/search/isearch/ISearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/sortdatestart/SortDateStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/sortdatestart/SortDateStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validators/addinformvalidator/AddInformValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/addinformvalidator/AddInformValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validators/agevalidator/AgeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/agevalidator/AgeValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validators/datevalidator/DateValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/datevalidator/DateValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validators/ivalidator/IValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/ivalidator/IValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validators/namevalidator/NameValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/namevalidator/NameValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/sortdatestart/SortDateStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/exsample/sortdatestart/SortDateStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/sortidcontract/SortIdContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/exsample/sortidcontract/SortIdContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validators/addinformvalidator/AddInformValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/exsample/addinformvalidator/AddInformValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validators/agevalidator/AgeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/exsample/agevalidator/AgeValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validators/datevalidator/DateValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/exsample/datevalidator/DateValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validators/namevalidator/NameValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/exsample/namevalidator/NameValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/RepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/RepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sort/sortdatestart/SortDateStartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sort/exsample/sortdatestart/SortDateStartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +33,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -83,7 +89,7 @@
       <recent name="person" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RepositoryTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="Untiled" />
@@ -147,12 +153,12 @@
       <module name="Untiled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sort.sortdatestart.*" />
+          <option name="PATTERN" value="sort.exsample.sortdatestart.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sort.sortdatestart" />
-      <option name="MAIN_CLASS_NAME" value="sort.sortdatestart.SortDateStartTest" />
+      <option name="PACKAGE_NAME" value="sort.exsample.sortdatestart" />
+      <option name="MAIN_CLASS_NAME" value="sort.exsample.sortdatestart.SortDateStartTest" />
       <option name="METHOD_NAME" value="sort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -168,10 +174,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.RepositoryTest" />
         <item itemvalue="JUnit.RepositoryTest.sort" />
         <item itemvalue="JUnit.SortDateStartTest.sort" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PersonTest" />
       </list>
     </recent_temporary>
@@ -189,5 +195,16 @@
       <updated>1604052634693</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/csvreader/CSVReader.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

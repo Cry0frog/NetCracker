@@ -1,4 +1,4 @@
-package validators.datevalidator;
+package validators.exsample.agevalidator;
 
 import contract.Contract;
 import validators.ivalidator.IValidator;
@@ -6,22 +6,22 @@ import validators.message.Message;
 import validators.message.status.Status;
 
 /**
- * DateValidator class, has date validation.
+ * AgeValidator class, has age validation.
  * @author Valuyskikh Nikita
  * @version 1.0
  */
-public class DateValidator implements IValidator {
+public class AgeValidator implements IValidator {
 
     /**
      * Field Contract
      */
     private Contract contract;
 
-    public DateValidator(Contract contract) {
+    public AgeValidator(Contract contract) {
         this.contract = contract;
     }
 
-    public DateValidator(){
+    public AgeValidator(){
 
     }
 
@@ -31,10 +31,10 @@ public class DateValidator implements IValidator {
     @Override
     public Message status() {
         Message message;
-        if(contract.getDateStart().isBefore(contract.getDateFinish())) {
+        if (contract.getPerson().getAge() >= 18) {
             message = new Message(Status.OK);
         } else {
-            message = new Message(Status.WARNING, "Date: The contract end date is less than the start date!");
+            message = new Message(Status.WARNING, "Age: Customer under 18");
         }
         return message;
     }

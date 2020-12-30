@@ -1,4 +1,4 @@
-package validators.namevalidator;
+package validators.exsample.datevalidator;
 
 import contract.Contract;
 import validators.ivalidator.IValidator;
@@ -6,22 +6,22 @@ import validators.message.Message;
 import validators.message.status.Status;
 
 /**
- * NameValidator class, has name validation.
+ * DateValidator class, has date validation.
  * @author Valuyskikh Nikita
  * @version 1.0
  */
-public class NameValidator implements IValidator {
+public class DateValidator implements IValidator {
 
     /**
      * Field Contract
      */
     private Contract contract;
 
-    public NameValidator(Contract contract) {
+    public DateValidator(Contract contract) {
         this.contract = contract;
     }
 
-    public NameValidator(){
+    public DateValidator(){
 
     }
 
@@ -31,11 +31,10 @@ public class NameValidator implements IValidator {
     @Override
     public Message status() {
         Message message;
-        String[] name = contract.getPerson().getName().split(" ");
-        if (name.length < 3) {
-            message = new Message(Status.WARNING, "Name: The field does not contain the required information (Surname First name Patronymic)!");
-        } else {
+        if(contract.getDateStart().isBefore(contract.getDateFinish())) {
             message = new Message(Status.OK);
+        } else {
+            message = new Message(Status.WARNING, "Date: The contract end date is less than the start date!");
         }
         return message;
     }

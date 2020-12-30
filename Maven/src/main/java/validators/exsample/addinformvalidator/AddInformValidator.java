@@ -1,4 +1,4 @@
-package validators.addinformvalidator;
+package validators.exsample.addinformvalidator;
 
 import contract.Contract;
 import contract.internet.ContractInternet;

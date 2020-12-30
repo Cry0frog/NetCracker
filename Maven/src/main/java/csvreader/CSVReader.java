@@ -1,24 +1,25 @@
 package csvreader;
 
+import annotation.injectable.AutoInjectable;
 import contract.Contract;
 import contract.internet.ContractInternet;
 import contract.mobile.ContractMobile;
 import contract.tv.ContractTV;
+import injector.Injector;
 import org.joda.time.LocalDate;
 import person.Person;
 import repository.Repository;
-import validators.addinformvalidator.AddInformValidator;
-import validators.agevalidator.AgeValidator;
-import validators.datevalidator.DateValidator;
+import validators.exsample.addinformvalidator.AddInformValidator;
+import validators.exsample.agevalidator.AgeValidator;
+import validators.exsample.datevalidator.DateValidator;
 import validators.ivalidator.IValidator;
-import validators.message.Message;
 import validators.message.status.Status;
-import validators.namevalidator.NameValidator;
+import validators.exsample.namevalidator.NameValidator;
 
-import javax.xml.validation.Validator;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 /**
@@ -38,16 +39,15 @@ public class CSVReader {
     Person person;
 
     /** field ArrayList */
-    public static ArrayList<IValidator> validatorsArr = new ArrayList<>();
-
-    static  {
-        validatorsArr.add(new AddInformValidator());
-        validatorsArr.add(new AgeValidator());
-        validatorsArr.add(new DateValidator());
-        validatorsArr.add(new NameValidator());
-    }
+    @AutoInjectable
+    public ArrayList<IValidator> validatorsArr = new ArrayList<>();
 
     public CSVReader(Repository repository, FileReader fileReader) {
+        try {
+            Injector.inject(this);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | InstantiationException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         this.repository = repository;
         this.fileReader = fileReader;
 

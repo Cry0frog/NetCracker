@@ -1,4 +1,4 @@
-package validators.agevalidator;
+package validators.exsample.namevalidator;
 
 import contract.Contract;
 import validators.ivalidator.IValidator;
@@ -6,22 +6,22 @@ import validators.message.Message;
 import validators.message.status.Status;
 
 /**
- * AgeValidator class, has age validation.
+ * NameValidator class, has name validation.
  * @author Valuyskikh Nikita
  * @version 1.0
  */
-public class AgeValidator implements IValidator {
+public class NameValidator implements IValidator {
 
     /**
      * Field Contract
      */
     private Contract contract;
 
-    public AgeValidator(Contract contract) {
+    public NameValidator(Contract contract) {
         this.contract = contract;
     }
 
-    public AgeValidator(){
+    public NameValidator(){
 
     }
 
@@ -31,10 +31,11 @@ public class AgeValidator implements IValidator {
     @Override
     public Message status() {
         Message message;
-        if (contract.getPerson().getAge() >= 18) {
-            message = new Message(Status.OK);
+        String[] name = contract.getPerson().getName().split(" ");
+        if (name.length < 3) {
+            message = new Message(Status.WARNING, "Name: The field does not contain the required information (Surname First name Patronymic)!");
         } else {
-            message = new Message(Status.WARNING, "Age: Customer under 18");
+            message = new Message(Status.OK);
         }
         return message;
     }

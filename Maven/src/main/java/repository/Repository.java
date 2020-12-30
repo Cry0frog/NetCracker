@@ -1,5 +1,6 @@
 package repository;
 
+import annotation.injectable.AutoInjectable;
 import contract.Contract;
 import search.isearch.ISearch;
 import sort.isorter.ISort;
@@ -19,7 +20,9 @@ public class Repository  {
     /** Number of contracts added. */
     private int numberContract = 0;
 
+
     /** Field ISort interface. */
+    @AutoInjectable
     ISort iSort;
 
     /** The method returns the size of the array

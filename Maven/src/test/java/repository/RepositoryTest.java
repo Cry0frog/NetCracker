@@ -10,7 +10,7 @@ import person.Person;
 import search.isearch.ISearch;
 import search.searchdatefrom.SearchDataFrom;
 import sort.isorter.ISort;
-import sort.sortidcontract.SortIdContract;
+import sort.exsample.sortidcontract.SortIdContract;
 
 import static org.junit.Assert.*;
 

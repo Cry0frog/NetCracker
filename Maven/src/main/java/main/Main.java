@@ -5,15 +5,18 @@ import contract.internet.ContractInternet;
 import contract.mobile.ContractMobile;
 import contract.tv.ContractTV;
 import csvreader.CSVReader;
+import injector.Injector;
 import person.Person;
 import repository.Repository;
 import org.joda.time.LocalDate;
 import search.searchdatefrom.SearchDataFrom;
-import sort.sortdatestart.SortDateStart;
-import sort.sortidcontract.SortIdContract;
+import sort.exsample.sortdatestart.SortDateStart;
+import sort.exsample.sortidcontract.SortIdContract;
 
+import java.awt.*;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.lang.reflect.InvocationTargetException;
 
 
 public class Main {
@@ -28,6 +31,12 @@ public class Main {
         repository.add(contract2);
         repository.add(contract2);
         repository.add(contract3);
+
+        try {
+            Injector.inject(repository);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | InstantiationException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
 
         for (int i = 0; i < repository.size(); i++) {
             System.out.println(repository.get(i));

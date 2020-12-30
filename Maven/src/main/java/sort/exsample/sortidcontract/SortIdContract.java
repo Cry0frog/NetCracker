@@ -1,4 +1,4 @@
-package sort.sortidcontract;
+package sort.exsample.sortidcontract;
 
 import contract.Contract;
 import sort.isorter.ISort;
